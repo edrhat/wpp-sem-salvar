@@ -12,8 +12,13 @@ class Tela():
         self.img1.config(bg="black")
         self.img1.place(x=0, y=0)
 
+
+        self.ex = Label(janela, text="Exemplo: DDD983453214")
+        self.ex["font"] = ("Lucida, 13")
+        self.ex.config(bg="black", foreground="red")
+        self.ex.place(x=209, y=100)
         
-        self.lb = Label(janela, text="Número")
+        self.lb = Label(janela, text="Número:")
         self.lb["font"] = ("Lucida, 20")
         self.lb.config(bg="black", foreground="white")
         self.lb.place(x=70, y=130)
@@ -53,4 +58,5 @@ janela.title("WHATSAPP - SEM SALVAR CONTATO")
 janela.geometry("500x300")
 janela.config(bg="black")
 janela.iconbitmap("cj.ico")
+janela.resizable(width=False, height=False)
 janela.mainloop()
